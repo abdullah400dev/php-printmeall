@@ -1,0 +1,4 @@
+[26-Oct-2022 07:41:45 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/inkhraij/printmeall.com/laravel/app/OrderCredits.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/inkhraij/printmeall.com/laravel/app/OrderCredits.php on line 7

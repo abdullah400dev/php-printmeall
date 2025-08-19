@@ -1,0 +1,11 @@
+<html>
+    <head>
+    <title>Doe</title>
+    @livewireStyles
+    </head>
+    <body>
+        <h2>Helo</h2>
+  @livewire('test-components')
+    </body>
+    @livewireScripts
+</html>

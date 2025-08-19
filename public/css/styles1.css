@@ -1,0 +1,1523 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #595757;
+  /*overflow-x: hidden;*/
+}
+
+/*popups*/
+.popups {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.verified {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.verified.show {
+  display: flex;
+}
+
+.verified .verified-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.5);
+}
+
+.verified-content {
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgb(73, 73, 73);
+  padding: 30px;
+  position: absolute;
+  z-index: 99;
+  background-color: #fff;
+  height: auto;
+  width: 60%;
+}
+
+.verified-content p {
+  margin-bottom: 20px;
+}
+
+.verified-content .button {
+  text-align: right;
+}
+
+.verified-content .verified-btn {
+  border: none;
+  background: rgb(227, 116, 83);
+  color: #fff;
+  padding: 6px 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hole-overlay {
+  display: none;
+}
+
+.hole-overlay.show {
+  display: block;
+}
+
+.hole-overlay .text {
+  position: absolute;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.hole {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+}
+
+.hole1 .hole {
+  right: 170px;
+  top: 0px;
+}
+
+.hole1 img {
+  width: 200px;
+  z-index: -99;
+  position: absolute;
+  right: 185px;
+  top: 45px;
+  box-shadow: 0 0 3px 0 #777;
+}
+
+@media screen and (max-width: 1000px){
+    .popups{
+        display:none;
+    }
+}
+
+/*end popups*/
+
+/* navbar */
+.quote1{
+    margin-top:83px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@media screen and (max-width: 970px) {
+  .wrapper .btn{
+    display: block;
+  }
+  .catname12{
+      padding:10% !important;
+  }
+  .wrapper .nav-links{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    top: 0;
+    left: -100%;
+    background: white;
+    display: block;
+    padding: 50px 10px;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+    transition: all 0.3s ease;
+  }
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #242526;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3A3B3C;
+  }
+  #menu-btn:checked ~ .nav-links{
+    left: 0%;
+  }
+  #menu-btn:checked ~ .btn.menu-btn{
+    display: none;
+  }
+  #close-btn:checked ~ .btn.menu-btn{
+    display: block;
+  }
+  .nav-links li{
+    margin: 15px 10px;
+  }
+  .nav-links li a{
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 20px;
+  }
+  .nav-links .drop-menu{
+    position: static;
+    opacity: 1;
+    top: 65px;
+    visibility: visible;
+    padding-left: 20px;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+  #showDrop:checked ~ .drop-menu,
+  #showMega:checked ~ .mega-box{
+    max-height: 100%;
+  }
+   #showDrop:checked ~ .drop-menu,
+  #showMega1:checked ~ .mega-box{
+    max-height: 100%;
+  }
+   #showDrop:checked ~ .drop-menu,
+  #showMega2:checked ~ .mega-box{
+    max-height: 100%;
+  }
+  .nav-links .desktop-item{
+    display: none;
+  }
+  .nav-links .mobile-item{
+    display: block;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .nav-links .mobile-item:hover{
+  /*  background: #3A3B3C; */
+  }
+  .drop-menu li{
+    margin: 0;
+  }
+  .drop-menu li a{
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  .mega-box{
+    position: static;
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .mega-box .content{
+    box-shadow: none;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+  }
+  .mega-box .content .row{
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .mega-box .content .row:nth-child(1),
+  .mega-box .content .row:nth-child(2){
+    border-top: 0px;
+  }
+  .content .row .mega-links{
+    border-left: 0px;
+    padding-left: 15px;
+  }
+  .row .mega-links li{
+    margin: 0;
+  }
+  .content .row header{
+    font-size: 19px;
+  }
+}
+nav input{
+  display: none;
+}
+.quote {
+  color: #fff !important ;
+  background-color: hsl(15, 79%, 78%);
+  border-radius: 99px;
+  padding: 8px 22px;
+}
+.body-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 0 30px;
+}
+.body-text div{
+  font-size: 45px;
+  font-weight: 600;
+}
+
+/* end navbar */
+
+/* banner */
+
+.home-banner {
+  background: url("https://printmeall.com/images1/banner-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.banner-text {
+  height: 500px;
+  padding-left: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text h1 {
+  font-size: 35px;
+  font-weight: 800;
+  color: #f5bdaa;
+}
+
+.banner-text p {
+  font-size: 16px;
+}
+
+.banner-btn {
+  margin-top: 40px;
+}
+
+.banner-btn a {
+  color: hsl(15, 79%, 80%);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.banner-color-btn {
+  color: #fff !important;
+  background-color: hsl(15, 79%, 80%);
+  padding: 8px 24px;
+  border-radius: 99px;
+  margin-right: 20px;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-banner-2 .banner-text h1 {
+  color: #948563;
+}
+
+.home-banner-2 .banner-color-btn {
+  background-color: #948563;
+}
+
+.home-banner-3 .banner-text h1 {
+  color: #7ac6c4;
+}
+
+.home-banner-3 .banner-color-btn {
+  background-color: #7ac6c4;
+}
+
+/* banner end */
+
+/* features */
+
+.features {
+  margin: 80px 0 50px;
+}
+
+.features-top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature-col {
+  padding: 0;
+}
+
+.features-head {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.features img {
+  width: 100%;
+}
+
+/* end features */
+
+/* box style */
+
+.box-style {
+  padding: 50px 100px;
+  text-align: center;
+  background-color: hsl(0, 0%, 92%);
+}
+
+.box-style-top {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.box-style-head {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.box-style-btn {
+  margin-top: 50px;
+}
+
+.box-style-btn a {
+  background-color: hsl(36, 71%, 67%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 35px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.box-style-btn a:hover {
+  background-color: hsl(36, 71%, 62%);
+}
+
+.product-card {
+  /* background-image: url("../images/Pri-me-all/Dots\ copy\ 7.png"); */
+  background-size: cover;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* margin-bottom: 50px; */
+  box-shadow: 0 0 20px 0 rgb(189, 189, 189);
+  border-radius: 15px;
+}
+
+.card-col{
+  padding: 30px;
+}
+
+.card-name {
+  margin-bottom: 20px;
+}
+
+.card-name p {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.card-image img {
+  width: 100%;
+  height:250px;
+}
+
+.card-btn {
+  /* margin-bottom: 50px; */
+  padding-bottom: 30px;
+}
+
+.card-btn a {
+  color: #fff;
+  background-color: hsl(15, 79%, 77%);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 9px 30px;
+  border-radius: 99px;
+}
+
+.card-btn a:hover {
+  color: #fff;
+  background-color: hsl(15, 65%, 73%);
+}
+
+.banner-phone-image{
+  display: none;
+}
+/* end box style */
+
+
+/* slider-bottom-btn */
+
+.slider-bottom .faq ::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.slider-bottom .faq ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px 0 #818181;
+  border-radius: 99px;
+}
+
+/* Handle */
+.slider-bottom .faq ::-webkit-scrollbar-thumb {
+  background: #f3b19b;
+  border-radius: 99px;
+  transition: 0.3s;
+}
+
+/* Handle on hover */
+.slider-bottom .faq ::-webkit-scrollbar-thumb:hover {
+  background: #d8967e;
+}
+
+.slider-bottom {
+  background-color: #f0f0f0;
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+.slider-bottom-btn {
+  display: flex;
+  padding: 0 150px;
+  justify-content: space-around;
+}
+
+.slider-bottom-btn a {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  background-color: #e7a48c;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 99px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.hover-dropdown.designer-level {
+  padding: 0 100px;
+  transition: 1s;
+  text-align: left !important;
+}
+
+.designer-level ::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.designer-level ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px 0 #c5c5c5;
+  border-radius: 99px;
+}
+
+/* Handle */
+.designer-level ::-webkit-scrollbar-thumb {
+  background: #dda28d;
+  border-radius: 99px;
+  transition: 0.3s;
+}
+
+/* Handle on hover */
+.designer-level ::-webkit-scrollbar-thumb:hover {
+  background: #dbca0d;
+}
+
+.hover-dropdown.designer-level .inner-level {
+  text-align: left !important;
+}
+
+.hover-dropdown.designer-level .level-description {
+  max-height: 150px !important;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.hover-dropdown.designer-level .level-description li {
+  list-style: circle;
+}
+
+.hover-dropdown.designer-level .level-description a {
+  color: rgb(99, 99, 99);
+  font-size: 14px;
+}
+
+.hover-dropdown.designer-level .level-description a:hover {
+  text-decoration: underline;
+}
+
+.hover-dropdown .designer-level-cards {
+  margin: 0;
+}
+
+.hover-dropdown .level {
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 0 auto;
+  transition: 0.5s;
+}
+
+.hover-dropdown .level .level-btn {
+  text-align: center;
+}
+
+.hover-dropdown .beginner-level {
+  transition: 0.5s;
+}
+.hover-dropdown .intermediate-level {
+  transition: 0.7s;
+}
+.hover-dropdown .expert-level {
+  transition: 0.9s;
+}
+.hover-dropdown .guru-level {
+  transition: 1.1s;
+}
+
+.hover-dropdown-active .level,
+.hover-dropdown:hover .level {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.hover-dropdown-active.designer-level,
+.hover-dropdown.designer-level:hover {
+  padding: 30px 100px 10px;
+}
+
+.hover-dropdown.faq {
+  /* padding-top: 30px; */
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.7s;
+}
+
+.hover-dropdown .blur {
+  display: none;
+}
+
+.hover-dropdown .blur .blur-active {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4430147058823529) 30%,
+    rgba(0, 0, 0, 0) 65%
+  );
+  height: 30px;
+}
+
+.hover-dropdown.faq .faq-top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hover-dropdown.faq .faq-top p {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #115888;
+  margin-bottom: 5px;
+}
+
+.hover-dropdown.faq .faq-top .underline {
+  height: 4px;
+  background-color: #115888;
+  border-radius: 99px;
+  width: 200px;
+  margin: auto;
+}
+
+.hover-dropdown.projects {
+  max-height: 0;
+  padding: 0 100px;
+  overflow-y: hidden;
+  transition: 1s;
+}
+
+.hover-dropdown.projects .swiper-slide img {
+  height: 280px;
+  object-fit: cover;
+}
+
+.hover-dropdown.projects .services-card-text {
+  top: 20px;
+}
+
+.hover-dropdown.projects .services-card-text p:nth-child(1) {
+  font-size: 20px;
+}
+
+.hover-dropdown-active.faq,
+.hover-dropdown.faq:hover {
+  max-height: 1000px;
+  overflow-y: auto;
+  padding: 20px 0;
+}
+
+.hover-dropdown-active.faq .accordion,
+.hover-dropdown.faq:hover .accordion {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.hover-dropdown-active.projects,
+.hover-dropdown.projects:hover {
+  max-height: 400px;
+  padding: 20px 100px;
+}
+
+/* slider-bottom-btn end */
+
+.designer-level {
+  padding: 50px 100px;
+}
+
+.designer-level-top p:nth-child(1) {
+  font-size: 30px;
+  font-weight: 700;
+  color: #273898;
+}
+
+.designer-level-top p:nth-child(2) {
+  font-weight: 600;
+  color: #1767a8;
+}
+
+.designer-level-cards {
+  margin-top: 30px;
+}
+
+.level {
+  padding: 0 5px;
+}
+
+.inner-level {
+  padding: 20px 20px 10px;
+  background-color: #fff;
+  color: #d8967e;
+  text-align: center;
+  box-shadow: 0 0 3px 0 #d8d8d8;
+}
+
+.level-top {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.level-description p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.level-projects {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.level-rating i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.beginner-level .level-rating i:nth-child(1) {
+  color: #ffec13;
+}
+
+.level-btn {
+  margin: 30px 0 20px;
+}
+
+.level-btn a {
+  color: #fff;
+  background-color: #e7a48c;
+  padding: 6px 40px;
+  border-radius: 99px;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 5px 5px 5px 0 #aaaaaa;
+}
+
+/* end designer level */
+
+
+/* video embed */
+
+.video-embed {
+  background-image: url("https://printmeall.com/images1/Pri-me-all/Shape\ copy\ 3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 60px;
+  text-align: center;
+}
+
+.video-top {
+  margin-bottom: 80px;
+}
+
+.video-head {
+  text-transform: capitalize;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+/* end video embed */
+
+/* divider */
+
+.divider {
+  margin: 50px 100px;
+}
+
+.inner-divider {
+  background-color: hsl(0, 1%, 75%);
+  width: 100%;
+  height: 2px;
+}
+
+/* end divider */
+
+/* products */
+
+.products {
+  padding: 0px 100px 50px;
+  text-align: center;
+}
+
+.products-top {
+  text-align: center;
+}
+
+.products-head {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.products-btn {
+  margin-top: 50px;
+}
+
+.products-btn a {
+  background-color: hsl(36, 71%, 67%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 35px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.products-btn a:hover {
+  background-color: hsl(36, 71%, 62%);
+}
+
+/* end products */
+
+/* reviews */
+
+.reviews {
+  /* height: 200px; */
+  padding: 50px;
+  /* background-color: hsl(15, 79%, 78%); */
+  background-image: url("https://printmeall.com/images1/Pri-me-all/Vector\ Smart\ Object\ copy.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews-top {
+  text-align: center;
+}
+
+.reviews-head {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.review {
+  /* height: 100px; */
+  padding: 20px;
+}
+
+.inner-review {
+  /* height: 100px; */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.image-col {
+  width: 20%;
+}
+
+.image-col img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 5px 0 15px;
+}
+
+.name-col {
+  width: 80%;
+}
+
+.name-col p:nth-child(1) {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 8px 0 0;
+}
+
+.name-col p:nth-child(2) {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.name-col i {
+  color: hsl(60, 100%, 45%);
+  font-size: 13px;
+}
+
+.swiper-wrapper{
+  margin-bottom: 50px;
+}
+
+/* end reviews */
+
+/* faq */
+
+.faq-top {
+  margin: 0px auto 50px;
+  width: 73%;
+  text-align: center;
+}
+
+.faq-top p:nth-child(2) {
+  font-size: 15px;
+}
+
+.faq-head {
+  font-size: 28px;
+  font-weight: 600;
+  color: hsl(204, 78%, 30%);
+  margin-bottom: 8px;
+}
+
+.faq-top a {
+  color: hsl(15, 79%, 70%);
+}
+
+.question .q {
+  color: #136296;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.question .a {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+/* end faq */
+
+/* blog */
+
+.blog {
+  padding: 50px 0;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.blog-top {
+  text-align: center;
+  padding: 0 100px 40px;
+}
+
+.blog-head {
+  font-size: 28px;
+  font-weight: 600;
+  color: hsl(204, 78%, 30%);
+  margin-bottom: 8px;
+}
+
+.blog-col img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.blog-col p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.blog-btn {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.blog-btn a {
+  background-color: hsl(15, 79%, 77%);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 99px;
+  transition: 0.3s;
+}
+
+.blog-btn a:hover {
+  background-color: hsl(15, 79%, 74%);
+}
+
+/* end blog */
+
+/* underline */
+
+.underline {
+  border-radius: 99px;
+  height: 3px;
+  background-color: hsl(204, 78%, 30%);
+  width: 150px;
+  margin: 0 auto 20px;
+}
+
+/* end underline */
+
+.block-1 {
+  background-color: #540fc4;
+}
+
+.block-2 {
+  background: #02567c;
+}
+
+.block-3 {
+  background: rgb(8, 29, 216);
+}
+
+.design-block {
+  text-align: center;
+  height: 400px;
+  position: relative;
+  color: #fff;
+}
+
+.design-text {
+  padding: 20px 0;
+  height: 320px;
+  display: flex;
+  align-items: center;
+}
+
+.design-text p {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+}
+
+.design-block a {
+  color: #fff;
+  transition: 0.4s all ease-in;
+  border: 2px solid #c70771;
+  padding: 9px 18px;
+  font-weight: 600;
+}
+
+.design-block a:hover {
+  letter-spacing: 1.5px;
+  background: #c70771;
+}
+
+.underline {
+  height: 4px;
+  background-color: rgb(185, 168, 13);
+}
+
+
+/* footer */
+
+.footer-top-line {
+  height: 4px;
+  background-color: hsl(15, 79%, 70%);
+  width: 100%;
+}
+
+footer a {
+  color: #595757;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0;
+  display: block;
+}
+
+footer a:hover {
+  color: hsl(15, 79%, 70%);
+  /* padding-left: 14px; */
+  transition: 0.2s;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+footer {
+  background: hsl(0, 0%, 93%);
+}
+
+.icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-icon-col {
+  width: 15%;
+}
+
+.footer-detail-col {
+  width: 85%;
+}
+
+.footer-detail-col p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.icon {
+  display: inline;
+  all: initial;
+}
+
+.icon:hover {
+  padding-left: 0;
+}
+
+.icon i {
+  font-size: 22px;
+}
+
+.icons a:hover {
+  margin: 0;
+  cursor: pointer;
+  color: hsl(15, 79%, 70%);
+}
+
+footer i {
+  padding-right: 30px;
+}
+
+.links-col {
+  width: 50%;
+}
+
+.footer-contact .container-fluid {
+  margin-top: 30px;
+}
+
+.footer-col h3 {
+  color: hsl(204, 78%, 30%);
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.inner-footer {
+  margin: 0px 80px 0;
+}
+
+.web-name {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 20px;
+}
+
+.footer-about {
+  padding-right: 70px;
+}
+
+.footer-about p {
+  font-size: 15px;
+}
+
+.credits {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.credits img {
+  width: 80px;
+}
+
+.credits p {
+  font-size: 15px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+/* end footer */
+
+@media screen and (max-width: 1100px) {
+  .inner-footer {
+    margin: 80px 30px 0;
+  }
+
+  .footer-col {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+
+  /* banner */
+.top-slider {
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+  }
+
+  .top-slider .banner-image {
+    display: none;
+  }
+
+  .home-banner {
+    /*background: url("https://printmeall.com/images1/Pri-me-all/banner.png");
+    background: rgb(243,177,155);
+    background: radial-gradient(circle, rgba(243,177,155,1) 33%, rgba(241,163,136,1) 65%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-top:80px;*/
+    background: #f3ad96;
+  }
+.home-banner-2 {
+    background-color: #948563;
+  }
+
+  .home-banner-3 {
+    background-color: #7ac6c4;
+  }
+
+  .top-slider .banner-text h1 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .banner-text {
+    height: auto;
+    padding: 10px;
+  }
+
+  .banner-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .banner-text p {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .banner-btn {
+    margin-top: 40px;
+  }
+
+  .banner-btn a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .banner-color-btn {
+   /* color: #f5bdaa !important;
+    background-color: #fff; */
+     background-color: #fff !important;
+    padding: 8px 24px;
+    border-radius: 99px;
+    margin-right: 20px;
+  }
+
+   .home-banner .banner-color-btn {
+    color: #f5bdaa !important;
+  }
+  .home-banner-2 .banner-color-btn {
+    color: #948563 !important;
+  }
+  .home-banner-3 .banner-color-btn {
+    color: #7ac6c4 !important;
+  }
+
+  .banner-phone-image{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* banner end */
+
+  /* features */
+
+  .features {
+    margin: 80px 0 50px;
+  }
+
+  .features-top {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .features-head {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .features img {
+    width: 100%;
+  }
+
+  /* end features */
+
+  /* box style */
+
+  .box-style {
+    padding: 50px 5px;
+  }
+
+  .box-style-head {
+    font-size: 25px;
+  }
+
+  .box-style-btn a {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .product-card{
+    margin-bottom: 10px;
+  }
+
+  .card-col{
+    padding: 7px;
+  }
+
+
+  .card-name p {
+    font-size: 17px;
+  }
+
+  .card-btn{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-btn a {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+
+  /* end box style */
+
+  /* products section */
+
+  .products {
+    padding: 0px 0px 50px;
+    text-align: center;
+  }
+
+  /* end product section */
+
+  /* video iframe */
+
+  /* video embed */
+
+  .video-embed {
+    margin: 60px 20px;
+  }
+
+  .video-head {
+    font-size: 20px;
+  }
+
+  .swiper-slide{
+      justify-content: center;
+
+  }
+
+  /* end video embed */
+
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* end video iframe */
+
+  .card-image img{
+      width: 260px;
+      height: 250px;
+      object-fit: cover;
+  }
+
+
+
+  /* reviews */
+
+  .reviews {
+    padding: 50px 5px;
+  }
+
+  .reviews-head {
+    font-size: 23px;
+    font-weight: 600;
+  }
+
+  .image-col {
+    width: 30%;
+  }
+
+  .name-col {
+    width: 70%;
+  }
+
+  /* end reviews */
+
+  /* faq */
+
+  .faq {
+    /*padding: 80px 10px 40px;*/
+  }
+
+  .faq-top {
+    width: 90%;
+  }
+
+  .faq-head {
+    font-size: 23px;
+  }
+
+  .question .a {
+    margin-bottom: 50px;
+  }
+
+  /* end faq */
+
+  /* blog */
+
+  .blog {
+    padding: 50px 10px;
+  }
+
+  .blog-top {
+    padding: 0 10px 40px;
+  }
+
+  .blog-head {
+    font-size: 24px;
+  }
+
+  .blog-col {
+    margin-bottom: 50px;
+  }
+
+  .blog-btn {
+    margin-top: 0px;
+  }
+
+  /* end blog */
+
+  .slider-bottom-btn{
+      display: block;
+      padding: 0 10px;
+  }
+
+  .slider-bottom-btn a{
+      display: block;
+      margin: 10px 0;
+  }
+
+  /* footer */
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .inner-footer {
+    margin: 40px 30px 0;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .credits {
+    flex-direction: column;
+  }
+
+  /* end footer */
+}

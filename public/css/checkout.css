@@ -1,0 +1,31 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f3f3;
+}
+
+form .form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: 1px solid #e7a48c;
+}
+
+form button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.checkout-form-button {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.checkout-button {
+  background-color: #e99c80;
+  border: none;
+}
+
+.checkout-button:hover,
+.checkout-button:focus {
+  background-color: #e99476;
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+[03-Jun-2022 06:27:39 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/inkhraij/printmeall.com/laravel/routes/web.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/inkhraij/printmeall.com/laravel/routes/web.php on line 23
+[03-Jun-2022 06:27:50 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/inkhraij/printmeall.com/laravel/routes/web.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/inkhraij/printmeall.com/laravel/routes/web.php on line 23
+[07-Jul-2022 03:56:00 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/inkhraij/printmeall.com/laravel/routes/admin.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/inkhraij/printmeall.com/laravel/routes/admin.php on line 7
+[11-Jul-2022 03:45:57 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/inkhraij/printmeall.com/laravel/routes/admin.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/inkhraij/printmeall.com/laravel/routes/admin.php on line 7
+[20-Jul-2022 01:58:31 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/inkhraij/printmeall.com/laravel/routes/admin.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/inkhraij/printmeall.com/laravel/routes/admin.php on line 7
+[26-Jul-2022 05:00:27 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/inkhraij/printmeall.com/laravel/routes/admin.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/inkhraij/printmeall.com/laravel/routes/admin.php on line 7
+[30-Jul-2022 02:16:14 America/New_York] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/inkhraij/printmeall.com/laravel/routes/admin.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/inkhraij/printmeall.com/laravel/routes/admin.php on line 7

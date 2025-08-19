@@ -1,0 +1,7 @@
+[01-Nov-2021 06:42:44 UTC] PHP Fatal error:  Trait 'Illuminate\Database\Eloquent\Factories\HasFactory' not found in /home/inkhraij/printmeall.com/laravel/app/PCategory.php on line 8
+[01-Nov-2021 06:42:53 UTC] PHP Fatal error:  Trait 'Illuminate\Database\Eloquent\Factories\HasFactory' not found in /home/inkhraij/printmeall.com/laravel/app/PCategory.php on line 8
+[01-Nov-2021 06:47:34 UTC] PHP Fatal error:  Trait 'Illuminate\Database\Eloquent\Factories\HasFactory' not found in /home/inkhraij/printmeall.com/laravel/app/PCategory.php on line 8
+[01-Nov-2021 06:53:02 UTC] PHP Fatal error:  Trait 'Illuminate\Database\Eloquent\Factories\HasFactory' not found in /home/inkhraij/printmeall.com/laravel/app/PCategory.php on line 8
+[01-Nov-2021 06:57:40 UTC] PHP Fatal error:  Trait 'Illuminate\Database\Eloquent\Factories\HasFactory' not found in /home/inkhraij/printmeall.com/laravel/app/PCategory.php on line 8
+[01-Nov-2021 07:00:54 UTC] PHP Fatal error:  Trait 'App\HasFactory' not found in /home/inkhraij/printmeall.com/laravel/app/PCategory.php on line 8
+[01-Nov-2021 07:03:20 UTC] PHP Fatal error:  Trait 'Illuminate\Database\Eloquent\Factories\HasFactory' not found in /home/inkhraij/printmeall.com/laravel/app/PCategory.php on line 8

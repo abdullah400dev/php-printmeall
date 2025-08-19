@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.account {
+  padding: 0 50px;
+}
+
+.account-top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.account-top p {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.button {
+  padding: 20px;
+}
+
+.button a:hover {
+  color: #dd9072;
+}
+
+.inner-button {
+  box-shadow: 0 0 10px 0 rgb(143, 143, 143);
+  border-radius: 8px;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-button i {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.inner-button p {
+  font-size: 22px;
+  font-weight: 700;
+}

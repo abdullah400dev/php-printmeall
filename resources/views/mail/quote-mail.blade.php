@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .email {
+            width: 700px;
+            margin: auto;
+            font-family: sans-serif;
+        }
+
+        .header {
+            justify-content: center;
+            padding: 10px 0;
+            display: flex;
+            background-color: #f5e4e9;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+
+        .logo-img {
+            margin:auto;
+            width: 50px;
+            margin-right: 5px;
+        }
+
+        .logo-p {
+            text-align:center;
+            font-size: 17px;
+            font-weight: 600;
+            color: #3f3f3f;
+            margin-top: 10%;
+        }
+
+        .receipt-top {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .receipt-top-text {
+            font-weight: 600;
+            font-size: 33px;
+            margin-bottom: 25px;
+            color:black !important;
+        }
+        
+          .receipt-top-text-p {
+            color:black !important;
+            font-size:17px !important;
+        }
+
+        .order-summary {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            background-color: #f5e4e9;
+            padding: 20px 10px;
+        }
+
+        .order-summary-p {
+            margin-bottom: 10px;
+            color:black !important;
+        }
+
+        .summary {
+            width: 45%;
+        }
+
+        .summary-top-p {
+            font-weight: 600;
+            color:black !important;
+        }
+
+        .summary-detail {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .shipping {
+            width: 40%;
+        }
+
+        .ordered-items {
+            margin-top: 40px;
+            padding: 10px;
+            font-size:16px;
+        }
+
+        .ordered-items-top {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(215, 215, 215);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+
+        .ordered-items-top-p {
+            font-weight: 600;
+             color:black !important;
+        }
+
+        .ordered-items-top-p1{
+            width: 60%;
+        }
+
+        .ordered-items-top-p2{
+            width: 20%;
+        }
+
+        .ordered-items-top-p3{
+            width: 20%;
+        }
+
+        .ordered-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: 10px;
+        }
+
+        .name {
+            width: 60%;
+            color:black !important;
+        }
+
+        .qty {
+            width: 20%;
+             color:black !important;
+        }
+
+        .price {
+            width: 20%;
+             color:black !important;
+        }
+
+        .ordered-total {
+            padding: 20px;
+            width: 55%;
+            margin-left: auto;
+            color: black;
+            font-size: 16px;
+        }
+
+        .ordered-total-div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .ordered-total-div-p1 {
+            font-weight: 600;
+        }
+
+        footer {
+            background: #f5e4e9;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-logo {
+            width: 25%;
+        }
+
+        .footer-logo1 {
+            margin-bottom: 20px;
+
+        }
+
+        .links-a {
+            display: block;
+            color: #2f2e2e;
+            margin-bottom: 7px;
+            font-size: 15px;
+        }
+
+        .links-a:hover {
+            text-decoration: underline;
+        }
+
+      .footer-information {
+            padding: 15px 0;
+            width: 60%;
+        }
+
+        footer .footer-information p:nth-child(1) {
+            font-weight: 600;
+            font-size: 17px;
+            color: #131313;
+            margin-bottom: 15px;
+        }
+
+        .footer-information-p {
+            font-size: 15px;
+            color: #161616;
+        }
+            .top-head {
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        .details p {
+            margin-bottom: 10px;
+        }
+
+        .table {
+            margin: 40px 0 30px;
+        }
+
+        table {
+            width: 100%;
+
+        }
+
+        .table table th,
+        td {
+            text-align: left;
+            border: 1px solid #e2e2e2;
+            margin-bottom: 10px;
+            padding: 6px;
+            border-spacing: 0;
+        }
+
+        .product-details {
+            width: 45%;
+            margin-bottom: 40px;
+        }
+
+        .product-detail {
+            display: flex;
+
+            padding: 6px 0;
+        }
+
+        .bold {
+            font-weight: 600;
+            width: 38%;
+        }
+
+        .normal {
+            width: 60%;
+            margin-left: auto;
+        }
+
+        .amount {
+            width: 40%;
+            margin-left: auto;
+        }
+
+        .flex {
+            display: flex;
+            padding: 15px 0;
+        }
+
+        .subtotal,
+        .total {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .total,
+        .paid {
+            font-weight: 600;
+        }
+
+        .balance {
+            border-radius: 5px;
+            overflow: hidden;
+            font-weight: 600;
+        }
+
+        .balance .balance-head {
+            background-color: #E9AF99;
+            text-align: center;
+            color: #fff;
+            padding: 13px 5px;
+
+        }
+
+        .balance .balance-price {
+            padding: 13px;
+            text-align: right;
+            border: 2px solid #E9AF99;
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .details-left,
+            .details-right {
+                width: 46%;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+
+            .product-details {
+                width: 100%;
+            }
+
+            .amount {
+                width: 80%;
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="email">
+
+
+        <div class="header">
+            <div class="logo">
+                <img class="logo-img" src="https://printmeall.com/images1/logo2.png" alt="">
+                <p class="logo-p">Printmeall</p>
+            </div>
+        </div>
+        <div class="receipt">
+            <div class="receipt-top">
+                <p class="receipt-top-text">Response For Product Inquiry # {{$quote->id}} </p>
+                <p class="receipt-top-text-p">Thanks for your interest in printmeall. After review we sent you an offer of your product inquiry, Call us +971 55 6997715
+                </p>
+            </div>
+            <div class="table">
+            <table>
+                <tr style="border-bottom: 2px solid #777;">
+                    <th style="width: 40%;">Description</th>
+                    <th style="width: 20%; text-align: right;">Quantity</th>
+                    <th style="width: 20%; text-align: right;">Rate</th>
+                    <th style="width: 20%; text-align: right;">Amount</th>
+                </tr>
+                <tr>
+                    <td>{{$quote->product->name}} </td>
+                    <td style="width: 20%; text-align: right;">{{$quote->squantity}}</td>
+                    <td style="width: 20%; text-align: right;">{{$quote->currency}}: {{$quote->price}}</td>
+                    <td style="width: 20%; text-align: right;">{{$quote->currency}}: {{$quote->squantity * $quote->price}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="product-details">
+             @foreach(json_decode($quote->customfeilds) as $key => $value)
+             <div class="product-detail">
+                <p class="bold">{{$key}}</p>
+                <p class="normal">{{$value}}</p>
+            </div>
+             @endforeach
+
+        </div>
+        <div class="amount">
+            <div class="flex subtotal">
+                <p>Subtotal</p>
+                <p style="margin-left: auto;">{{$quote->currency}}: {{$quote->squantity * $quote->price}}</p>
+            </div>
+            <div class="balance">
+                <div class="balance-head">
+                    <p>Total</p>
+                </div>
+                <div class="balance-price">
+                    <p>{{$quote->currency}}: {{$quote->squantity * $quote->price}}</p>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <footer>
+            <div class="footer-logo">
+                <div class="footer-logo1">
+                  <img class="logo-img" src="https://printmeall.com/images1/logo2.png" alt="">
+                    <p><b>Printmeall</b></p>
+                </div>
+
+                <div class="links">
+                    <a class="links-a" href="tel:+971 55 6997715">+971556997715</a>
+                    <a class="links-a" href="https://printmeall.com/">Printmeall.com</a>
+                    <a class="links-a" href="mailto:info@printmeall.com">info@printmeall.com</a>
+                </div>
+            </div>
+            <div class="footer-information">
+                <p></p>
+                <p class="footer-information-p">Print Me All is the state-of-the-art one-stop custom boxes solution provider with creative print ideas in all over UAE. Our customized boxes and packaging services are available for all businesses and professional requirements. </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
